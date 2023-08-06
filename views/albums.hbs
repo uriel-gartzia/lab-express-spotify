@@ -1,0 +1,9 @@
+<h1>Albums</h1>
+
+{{#each this.albumsSearched}}
+<p>{{this.name}}</p>
+{{#each this.images.[0]}}
+<img src="{{this}}" alt="">
+{{/each}}
+<a href=""><button>View tracks</button></a>
+{{/each}}

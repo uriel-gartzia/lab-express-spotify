@@ -1,0 +1,12 @@
+<div>
+
+ <h1>Resultados de la búsqueda</h1>
+ {{#each this.artistSearched}}
+ <p>{{this.name}}</p>
+ {{#each this.images.[0]}}
+ <img src="{{this}}" alt="">
+ {{/each}}
+ <a href="/albums/{{this.id}}"><button>View Albums</button></a>
+ {{/each}}
+
+</div>
